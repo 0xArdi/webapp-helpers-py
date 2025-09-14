@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "webapp-helper"
+version = "0.1.0"
+description = ""
+authors = ["Ardian <ardianabazi09@gmail.com>"]
+readme = "README.md"
+
+[[tool.poetry.packages]]
+include = "src"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4"
+sugar-sdk = "^0.3.1"
+pydantic = "^2.11.7"
+web3 = "^7.13.0"
+redis = "^6.4.0"
+hypercorn = "^0.17.3"
+uvicorn = "^0.35.0"
+mangum = "^0.19.0"
+flask = "^3.1.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+more-itertools = "^10.6.0"
+pytest = "^8.3.5"
+zappa = "^0.60.2"
+
+[build-system]
+requires = ["poetry-core"]
+
+build-backend = "poetry.core.masonry.api"
