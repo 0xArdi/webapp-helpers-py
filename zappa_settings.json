@@ -1,0 +1,17 @@
+{
+    "prod": {
+        "app_function": "src.app.app",
+        "exclude": [
+            "boto3",
+            "dateutil",
+            "botocore",
+            "s3transfer",
+            "concurrent"
+        ],
+        "profile_name": "default",
+        "project_name": "webapp-helper-p",
+        "runtime": "python3.11",
+        "s3_bucket": "webapp-helpers-py",
+        "aws_region": "us-east-1"
+    }
+}
