@@ -164,6 +164,7 @@ async def get_aerodrome_quote(body: SwapAerodromeBody) -> tuple[dict | None, str
         return {
             "quote": str(final_quote),
             "path": swap_path,
+            "pairPath": [token.lp for token in quote.path[0]]
         }, None
 
 
